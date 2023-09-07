@@ -55,8 +55,34 @@
         echo '<li>La Tercera Variable: </li>'; echo "$c";
         echo '</ul>';
     ?>
-
-
-    <h2>Ejercicio 2</h2>
+    <h2>Ejercicio 3</h2>
+    <p>Muestra el contenido de cada variable inmediatamente después de cada asignación,
+    verificar la evolución del tipo de estas variables (imprime todos los componentes de los
+    arreglo):</p>
+    <p>
+1.- $a = “PHP5”; <br>
+2.- $z[] = &$a; <br>
+3.-$b = “5a version de PHP”; <br>
+4.- $c = $b*10; <br>
+5.- $a .= $b;<br>
+6.- $b *= $c;<br>
+7.- $z[0] = “MySQL”;<br>
+    </p>
+    <?php
+    $a = "PHP5";
+    echo "1.-";var_dump($a); echo "<br>";
+    $z[] = &$a;
+    echo "2.-";var_dump($z); echo "<br>";
+    $b = "5a version de PHP";
+    echo "3.-";var_dump($b); echo "<br>";
+    @$c = $b * 10;
+    echo "4.-";var_dump($c); echo "<br>";
+    $a .= $b;
+    echo "5.-";var_dump($a); echo "<br>";
+    $b *= $c;
+    echo "6.-";var_dump($b);echo "<br>";
+    $z[0] = "MySQL";
+    echo "7.-";var_dump($z); echo "<br>";
+    ?>
 </body>
 </html>
