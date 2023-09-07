@@ -106,6 +106,23 @@ $z[0] = "MySQL";
 echo "7.-"; var_dump($z); echo "<br>";
 ?>
 
+<h2>Ejercicio 7</h2>
+    <p>Usando la variable predefinida $_SERVER, determina lo siguiente:
+a. La versión de Apache y PHP,
+b. El nombre del sistema operativo (servidor),
+c. El idioma del navegador (cliente). </p>
+<?php
+$apacheVersion = $_SERVER['SERVER_SOFTWARE'];
+$phpVersion = phpversion();
+$serverOs = php_uname('s');
+$clientLanguage = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+
+echo "Versión de Apache: $apacheVersion <br>";
+echo "Versión de PHP: $phpVersion <br>";
+echo "Nombre del sistema operativo del servidor: $serverOs <br>";
+echo "Idioma del navegador del cliente: $clientLanguage <br>";
+?>
+
 
 
 </body>
